@@ -106,7 +106,7 @@ n8 = new Linea('N8', 'rgb(173,0,117)','rgb(255,255,255)');
 n9 = new Linea('N9', 'rgb(249,214,22)','rgb(255,255,255)');
 n10 = new Linea('N10', 'rgb(0,165,219)','rgb(255,255,255)');
 
-setInterval(actualizar,5000);
+setInterval(actualizar,10000);
 
 function actualizar () {
 	l1.update();
