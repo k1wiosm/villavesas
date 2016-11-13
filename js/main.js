@@ -106,41 +106,52 @@ n8 = new Linea('N8', 'rgb(173,0,117)','rgb(255,255,255)');
 n9 = new Linea('N9', 'rgb(249,214,22)','rgb(255,255,255)');
 n10 = new Linea('N10', 'rgb(0,165,219)','rgb(255,255,255)');
 
-setInterval(actualizar,10000);
+j=0;
+setTimeout(function () {
+	setInterval(actualizar,500);
+},5000);
+
 
 function actualizar () {
-	l1.update();
-	l2.update();
-	l3.update();
-	l4.update();
-	l5.update();
-	l6.update();
-	l7.update();
-	l8.update();
-	l9.update();
-	l10.update();
-	l11.update();
-	l12.update();
-	l14.update();
-	l15.update();
-	l16.update();
-	l17.update();
-	l18.update();
-	l19.update();
-	l20.update();
-	l21.update();
-	l23.update();
-	l24.update();
-	l25.update();
+	j++;
+	if (j>=34) {
+		j = 1;
+	};
+	console.log(j);
+	switch(j) {
+		case 1: l1.update(); break;
+		case 2: l2.update(); break;
+		case 3: l3.update(); break;
+		case 4: l4.update(); break;
+		case 5: l5.update(); break;
+		case 6: l6.update(); break;
+		case 7: l7.update(); break;
+		case 8: l8.update(); break;
+		case 9: l9.update(); break;
+		case 10: l10.update(); break;
+		case 11: l11.update(); break;
+		case 12: l12.update(); break;
+		case 13: l14.update(); break;
+		case 14: l15.update(); break;
+		case 15: l16.update(); break;
+		case 16: l17.update(); break;
+		case 17: l18.update(); break;
+		case 18: l19.update(); break;
+		case 19: l20.update(); break;
+		case 20: l21.update(); break;
+		case 21: l23.update(); break;
+		case 22: l24.update(); break;
+		case 23: l25.update(); break;
 
-	n1.update();
-	n2.update();
-	n3.update();
-	n4.update();
-	n5.update();
-	n6.update();
-	n7.update();
-	n8.update();
-	n9.update();
-	n10.update();
+		case 24: n1.update(); break;
+		case 25: n2.update(); break;
+		case 26: n3.update(); break;
+		case 27: n4.update(); break;
+		case 28: n5.update(); break;
+		case 29: n6.update(); break;
+		case 30: n7.update(); break;
+		case 31: n8.update(); break;
+		case 32: n9.update(); break;
+		case 33: n10.update(); break;
+	}
 }
